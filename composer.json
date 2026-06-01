@@ -4,7 +4,7 @@
 	"type": "jetpack-library",
 	"license": "GPL-2.0-or-later",
 	"require": {
-		"automattic/jetpack-connection": "^8.5.0-alpha",
+		"automattic/jetpack-connection": "^8.5.0",
 		"automattic/jetpack-constants": "^3.0.10",
 		"php": ">=7.4"
 	},
