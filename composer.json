@@ -5,12 +5,12 @@
 	"license": "GPL-2.0-or-later",
 	"require": {
 		"php": ">=7.2",
-		"automattic/jetpack-assets": "^4.3.40",
-		"automattic/jetpack-connection": "^8.5.4",
-		"automattic/jetpack-constants": "^3.0.11"
+		"automattic/jetpack-assets": "^4.3.41-alpha",
+		"automattic/jetpack-connection": "^8.5.5-alpha",
+		"automattic/jetpack-constants": "^3.0.12-alpha"
 	},
 	"require-dev": {
-		"automattic/phpunit-select-config": "^1.0.7",
+		"automattic/phpunit-select-config": "^1.0.8-alpha",
 		"automattic/jetpack-test-environment": "@dev",
 		"brain/monkey": "^2.6.2",
 		"yoast/phpunit-polyfills": "^4.0.0"
@@ -30,7 +30,6 @@
 		"phpunit": [
 			"phpunit-select-config phpunit.#.xml.dist --colors=always"
 		],
-		"test-coverage": "pnpm concurrently --names php,js 'php -dpcov.directory=. ./vendor/bin/phpunit-select-config phpunit.#.xml.dist --coverage-php \"$COVERAGE_DIR/php.cov\"' 'pnpm:test-coverage'",
 		"test-js": [
 			"pnpm run test"
 		],
